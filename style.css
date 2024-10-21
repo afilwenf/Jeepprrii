@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Background warna lembut */
+    background-image: linear-gradient(135deg, #f0f8ff 25%, #e6e6fa 75%); /* Gradien warna */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Warna semi-transparan */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Membuat navigasi lebih fleksibel */
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 5px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* Section Styles */
+.section {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih transparan */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar Galeri */
+#gallery img {
+    width: 100%; /* Lebar penuh pada mobile */
+    height: auto;
+    max-width: 200px; /* Maksimal lebar gambar */
+    margin: 10px;
+}
+
+#animate-box {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    margin: 20px auto;
+    position: relative;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Navigasi vertikal di layar kecil */
+    }
+
+    .section {
+        margin: 10px; /* Mengurangi margin untuk layar kecil */
+        padding: 15px;
+    }
+
+    header .logo {
+        width: 40px; /* Ukuran logo lebih kecil di mobile */
+    }
+
+    footer {
+        padding: 10px; /* Footer lebih kompak di mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil di layar kecil */
+    }
+
+    p, li {
+        font-size: 1rem; /* Ukuran font paragraf disesuaikan */
+    }
+
+    #animate-box {
+        width: 80px; /* Ukuran animasi lebih kecil di mobile */
+        height: 80px;
+    }
+}
+/* Gaya untuk teks besar dan miring */
+.large-italic-text {
+    font-size: 1.5rem; /* Ukuran teks lebih besar */
+    font-style: italic; /* Membuat teks miring */
+    font-weight: bold; /* Opsi: membuat teks lebih tebal */
+    color: #333; /* Opsi: warna teks */
+}
+/* Header Styles */
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Warna semi-transparan */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Membuat header tetap di posisi atas */
+    top: 0; /* Menyematkan header di bagian paling atas */
+    width: 100%; /* Membuat header mengisi lebar penuh layar */
+    z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
+}
+
+/* Tambahkan padding pada body agar konten tidak tertutup oleh header */
+body {
+    padding-top: 60px; /* Sesuaikan dengan tinggi header */
+}
