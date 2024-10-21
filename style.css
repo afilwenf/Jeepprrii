@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; /* Ruang untuk header fixed */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    font-size: 18px; /* Ukuran font dasar */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px; /* Ukuran maksimum logo */
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 30px; /* Tambahkan padding untuk ruang lebih */
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem; /* Ukuran lebih besar untuk judul utama */
+    color: #333;
+    text-align: center; /* Pusatkan judul */
+}
+
+h2 {
+    font-size: 2rem; /* Ukuran lebih besar untuk sub-judul */
+    color: #333;
+    margin-bottom: 10px; /* Ruang di bawah sub-judul */
+}
+
+p, ul {
+    font-size: 1.2rem; /* Ukuran font untuk paragraf dan list */
+    margin-bottom: 15px; /* Ruang di bawah paragraf dan item list */
+}
+
+.large-italic-text {
+    font-size: 1.5rem; /* Ukuran lebih besar untuk teks khusus */
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
